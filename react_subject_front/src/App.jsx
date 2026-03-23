@@ -1,10 +1,14 @@
 import styles from './App.module.css';
+import './App.css';
+import SubjectListPage from './components/commons/pages/subject/SubjectListPage';
 
 function App() {
   return (
     <div>
       <header className={styles.header}>
-        <h1>강의 목록</h1>
+        <main className="main">
+          <SubjectListPage />
+        </main>
       </header>
     </div>
   );

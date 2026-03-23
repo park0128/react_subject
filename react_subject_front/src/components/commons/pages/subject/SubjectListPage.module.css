@@ -1,0 +1,101 @@
+/* Subject.module.css */
+
+/* 전체 랩핑 */
+.subject_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: gs_m;
+  background-color: var(--bg);
+}
+
+/* 페이지 제목 */
+.page-title {
+  font-family: gs_b;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  text-align: center;
+}
+
+/* 검색/필터 영역 */
+.list_option_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  background-color: var(--gray8);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 검색 폼 */
+.search_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+  align-items: center;
+}
+
+/* 셀렉트 박스 */
+.select {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background-color: var(--gray8);
+  color: var(--text1);
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.select:hover {
+  border-color: var(--primary);
+}
+
+/* 강의 목록 */
+.subject_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 강의 아이템 */
+.subject_item {
+  background-color: var(--gray8);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.subject_item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 강의 제목 */
+.subject_item h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text1);
+}
+
+/* 강의 정보 */
+.subject_item p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text2);
+}
