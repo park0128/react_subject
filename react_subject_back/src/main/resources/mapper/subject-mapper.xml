@@ -13,12 +13,12 @@
         <if test="category != null and category != ''">
             AND subject_category = 
             <choose>
-                <when test="category == '백엔드'">0</when>
-                <when test="category == '프론트엔드'">1</when>
-                <when test="category == 'DB'">2</when>
+               <when test="category == '프론트엔드'">0</when>
+				<when test="category == '백엔드'">1</when>
+				<when test="category == 'DB'">2</when>
             </choose>
         </if>
-        <if test="level != null">
+        <if test="level != null and level != ''">
             AND subject_level = #{level}
         </if>
         <choose>

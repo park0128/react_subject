@@ -119,7 +119,14 @@ const SubjectListPage = () => {
             <li key={s.subjectNo} className={styles.subject_item}>
               <h4>{s.subjectTitle}</h4>
               <p>강사: {s.subjectInstructor}</p>
-              <p>카테고리: {s.subjectCategory}</p>
+              <p>
+                카테고리:{' '}
+                {s.subjectCategory === 0
+                  ? '프론트엔드'
+                  : s.subjectCategory === 1
+                    ? '백엔드'
+                    : 'DB'}
+              </p>
               <p>
                 난이도:{' '}
                 {s.subjectLevel === 1
